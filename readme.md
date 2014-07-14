@@ -13,6 +13,9 @@
 
 -- and that is the essential workflow
 
+- some links for alex:
+    - http://mrbool.com/creating-a-metro-style-menu-in-html-and-css/26266
+
 ---
 - unsure if anything below here is still relevant
 
