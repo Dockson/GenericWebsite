@@ -2,11 +2,11 @@
 1. git clone git@github.com:Dockson/GenericWebsite.git
 2. Take the pictures and add them to newly created GenericWebsite directory
     - better yet, make a new directory inside GenericWebsite called "Storyboards" or "Images"
-    - You make a new directory with "mkdir <name_of_new_directory>"
+    - You make a new directory with "mkdir name_of_new_directory"
 3. git add --all 
-    - or: git add <name_of_picture>
-    - if you made a new directory, do: git add <name_of_dir>/<name_of_pic>
-    - remember you can use git status to see what's going on
+    - or: git add name_of_picture
+    - if you made a new directory, do: git add name_of_dir/name_of_pic
+    - remember you can use "git status" to see what's going on
 4. git commit -m "Adding storyboard pictures"
 5. git pull origin master
 6. git push origin master
