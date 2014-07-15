@@ -1,33 +1,27 @@
 // have jquery
 $(document).ready(function() {
-    console.log("starting main.js: document.ready");
-
-    // when we mouseover, it should:
-    // 1. gray out
-    // 2. add text about the image
-
-    // this means
-    // 1. append dom
-    // 2. append dom
-    //
-    // could do show/hide
-
+    // -----------content image----------------------
     $(".content").on('mouseenter', '.image', function() {
-        console.log("here");
-        //$(this).toggleClass("grayed-out");
         $(this).closest(".image").find("img").toggleClass("grayed-out");
         $(this).closest(".image").find(".image-text").show();
     });
-
     $(".content").on('mouseleave', '.image', function() {
-        $(this).closest(".image").find("img").toggleClass("grayed-out");
-        //$(this).toggleClass("grayed-out");
-        $(this).closest(".image").find(".image-text").hide("fast");
+        var image = $(this).closest(".image");
+        image.find("img").toggleClass("grayed-out");
+        image.find(".image-text").hide("fast");
     });
 
-    $(".content").on('click', '.image', function() {
-        // TODO
-        alert("pulling up something with more info");
+    $(".image").on('click', function() {
+        var t = $(this).find(".popup-text").text();
+        $.blockUI({ 
+            message: t,
+            onOverlayClick: $.unblockUI,
+            css: {  top: '25%'
+                 ,  left: '30%'
+                 ,  height: '40%'
+                 ,  width:  '40%'
+                 }
+        });
     });
 
     $(function() {
@@ -38,5 +32,13 @@ $(document).ready(function() {
             .after("<span class='spacer'>");
     });
 
-    console.log("exiting main.js: document.ready");
+    // -----------navigation side bar------
+    $(".sidebar-toggle").on("click", function() {
+        // TODO
+       $(this).closest("aside").find(".sidebar-items").toggle(); 
+       // now we need to show x-button
+
+    });
+    
+
 });

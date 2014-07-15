@@ -15,6 +15,11 @@
 
 - some links for alex:
     - http://mrbool.com/creating-a-metro-style-menu-in-html-and-css/26266
+    - http://jsfiddle.net/SRw67/
+    - http://www.malsup.com/jquery/block/
+- some website design examples:
+    - try.jquery.com
+    - http://codyhouse.co/demo/vertical-fixed-navigation/index.html
 
 ---
 - unsure if anything below here is still relevant
